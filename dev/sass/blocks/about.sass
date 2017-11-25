@@ -1,34 +1,31 @@
 // About section  - container for "about me" card
 .about-section
-    position: relative
-    margin-top: -200px
-
-    // Card with content, half-positioned over hero image section
-    &__card
-        box-shadow: 2px 2px 4px -2px $color-dark
+    list-style-type: none
+    +gs-column(6)
+    @media screen and (max-width: 800px)
         +gs-column(12)
 
-    &__card-header
-        padding: 20px
-        background-color: $color-accent
-        & h2, & h4
-            color: $color-light
+    &__item
+        margin-bottom: 50px
+        @media screen and (max-width: 800px)
+            margin-bottom: 30px
 
-    &__card-info
-        padding: 20px
-        background-color: $color-light
+        & h4
+            margin-left: 80px
+            margin-bottom: 10px
+            text-transform: uppercase
+            font-weight: bold
+
         & p
-            font-weight: lighter
-        & blockquote p
-            margin: 20px 0 20px 20px
-            font-family: $font-serif
-            font-style: italic
+            margin-left: 80px
 
-        & &-status
-            margin-top: 20px
-            padding-top: 10px
-            font-weight: normal
-            border-top: 1px dashed $color-darken
-            & span
-                font-weight: bold
-                text-transform: uppercase
+        // Service icon with state change on hover
+        &:before
+            margin-top: 30px
+            float: left
+            color: $color-darken
+            font-size: 60px
+            transition: color .5s
+
+        &:hover:before
+            color: $color-accent
