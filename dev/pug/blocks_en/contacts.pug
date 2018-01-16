@@ -1,0 +1,42 @@
+mixin contacts()
+    #contacts.contacts-section
+        .container
+            section.contact-card
+                header.contact-card__header
+                    h2 Yhteistiedot
+                    h4 
+                .contact-info
+                    .contact-info__logo TE
+                    .contact-info__group
+                        .contact-info__additional
+                            p Please contact us for further information:
+                            p &nbsp;
+                            p &nbsp;
+                        .contact-info__vcard.vcard
+                            h4.fn.org Tilitoimisto Eliitti Oy
+                            //p.role.title Lorem ipsum dolor sit amet
+                            p.icon.icon_location
+                                a.adr.js-anchor(href="https://www.google.fi/maps/place/Turvapolku+1,+00430+Helsinki" target="_blank")
+                                    span.country-name Finland
+                                    | ,&nbsp;
+                                    span.locality Helsinki                                      
+                                    | ,&nbsp;
+                                    span.address 00430, Turvapolku 1 B
+                            p.icon.icon_mail
+                                a.email(href="mailto:tilitoimisto.eliitti@gmail.com" target="_blank") tilitoimisto.eliitti@gmail.com
+                            p.icon.icon_phone
+                                a.phone(href="tel:+358-50-3464854") +358-50-3464854
+                        ul.contact-info__social
+                            li
+                                a.icon.icon_twi(href="https://twitter.com/elittitili" target="_blank" rel="nofollow") My Twitter
+                            li
+                                a.icon.icon_fb(href="https://www.facebook.com/elvira.tensina" target="_blank" rel="nofollow") I'm on Facebook
+                            li
+                                a.icon.icon_in(href="https://fi.linkedin.com/in/elvira-tensina-a405ab8a" target="_blank" rel="nofollow") My Linkedin profile
+                            li
+                                a.icon.icon_gplus(rel="nofollow") I'm on Google+
+                            li
+                                a.icon.icon_vk(rel="nofollow") I'm in Vk
+                            li
+                                a.icon.icon_rss(rel="nofollow") RSS feed
+        #gmap.gmap
